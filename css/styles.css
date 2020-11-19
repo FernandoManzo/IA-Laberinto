@@ -1,0 +1,55 @@
+body {
+	text-align: center;
+}
+
+#maze {
+	position: relative;
+	width: 500px;
+    margin: 0 auto;
+}
+
+.square {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	border: 1px solid black;
+	cursor: pointer;
+	background: #AEAEAE;
+	z-index: 10;
+}
+
+.space {
+	background: #AEAEAE;
+}
+
+.wall {
+	background: #232323;
+}
+
+.agent {
+	width: 50px;
+	height: 50px;
+	background: #F300D2;
+	position: absolute;
+	z-index: 99;
+}
+
+.goal {
+	width: 50px;
+	height: 50px;
+	background: #428F3C;
+	position: absolute;
+	z-index: 99;
+}
+
+.square.active {
+	background: yellow;
+}
+
+p.credits {
+	display: none;
+}
+
+#controls {
+  margin-bottom: 10px;
+}

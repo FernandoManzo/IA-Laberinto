@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Maze Solver</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<h1>Maze Solver</h1>
+	<p>Implementation of breadth-first search algorithm in backbone.js</p>
+	<div id="controls">
+		<button class="stateButton" id="maze_btn">Edit Maze</button>
+		<button class="stateButton" id="agent_btn">Edit Agent Position</button>
+		<button class="stateButton" id="goal_btn">Edit Goal</button>
+		<button class="findPath">Find Path</button>
+		<button class="clearPath">Clear Path</button>
+		<button class="clearMaze">Clear Path + Maze</button>
+	</div>
+	<div id="maze">
+		<div class="agent"></div>
+		<div class="goal"></div>
+	</div>
+	<p class="credits">Built with backbone.js</p>
+	<script id="squareTemplate" type="text/template">
+		<%= distance %>
+	</script>
+	<script id="mazeTemplate" type="text/template">
+	</script>
+	<script src="js/lib/jquery-1.11.3.min.js"></script>
+    <script src="js/lib/underscore.js"></script>
+    <script src="js/lib/backbone.js"></script>
+    <script src="js/models/square.js"></script>
+    <script src="js/models/agent.js"></script>
+    <script src="js/models/goal.js"></script>
+    <script src="js/collections/maze.js"></script>
+    <script src="js/views/square.js"></script>
+    <script src="js/views/agent.js"></script>
+    <script src="js/views/goal.js"></script>
+    <script src="js/views/maze.js"></script>
+    <script src="js/views/controls.js"></script>
+    <script src="js/app.js"></script>
+    <script>$(function(){app.boot()});</script>
+</body>
+</html>
